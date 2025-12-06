@@ -1,5 +1,7 @@
 //untuk tombol mode gelap
 let toggle=document.getElementById("toggleDark")
+const body = document.body;
+
 
 toggle.addEventListener("click",()=>{
     body.classList.toggle("dark-mode")

@@ -1,0 +1,329 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset css*/
+
+
+/* ===============================
+   GLOBAL STYLE
+================================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #06142E; /* navy gelap */
+    color: #E8ECF1;
+    line-height: 1.6;
+}
+
+.dark-mode{
+    background: #ffffff;
+    color: #111;
+}
+
+.dark-mode .header a,
+.dark-mode .header p{
+    color: #000;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+.box{
+    width: 100%;
+    padding: 20px 50px;
+}
+
+/* ===============================
+   HEADER / NAVBAR
+================================ */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 25px;
+}
+
+.header p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #4AA8FF;
+}
+
+.header a{
+    margin-left: 25px;
+    color: #c9d8f0;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.header a:hover{
+    color: #4AA8FF;
+}
+
+/* ===============================
+   MODE BUTTON
+================================ */
+.mode{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.mode button{
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    background: #4AA8FF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 20px #4AA8FF;
+    transition: .3s;
+}
+
+.mode button:hover{
+    transform: scale(1.1);
+}
+
+/* ===============================
+   HERO / INTRO SECTION
+================================ */
+.intro-name{
+    margin-top: 70px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.intro-name h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.intro-name h1 b{
+    color: #4AA8FF;
+}
+
+.intro-name h2{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4AA8FF;
+}
+
+.intro-name p{
+    margin-top: 20px;
+    max-width: 500px;
+    font-size: 15px;
+    color: #cbd8f3;
+}
+
+.intro-name img{
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(74, 168, 255, 0.4);
+}
+
+/* ===============================
+   EDUCATION / EXPERIENCE STYLE
+================================ */
+.education{
+    margin-top: 80px;
+    padding: 40px;
+    border-radius: 20px;
+    background: #0B1A3C;
+}
+
+.education h2{
+    font-size: 28px;
+    color: #4AA8FF;
+    margin-bottom: 25px;
+}
+
+.education p{
+    color: #d8e4ff;
+    font-size: 16px;
+    max-width: 900px;
+}
+
+/* ===============================
+   SKILL SECTION
+================================ */
+.skill{
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.skill img{
+    width: 55px;
+}
+
+/* ===============================
+   PROJECT SECTION
+================================ */
+.project{
+    margin-top: 80px;
+}
+
+.project h2{
+    font-size: 28px;
+    color: #4AA8FF;
+    margin-bottom: 20px;
+}
+
+.project a{
+    display: inline-block;
+}
+
+.project img{
+    width: 260px;
+    height: 160px;
+    background: #111e3d;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(74,168,255,0.3);
+    transition: .3s;
+}
+
+.project img:hover{
+    transform: scale(1.05);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer{
+    margin-top: 100px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer h2{
+    color: #4AA8FF;
+    margin-bottom: 20px;
+}
+
+.footer img{
+    width: 40px;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+.footer img:hover{
+    transform: scale(1.2);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 800px){
+    .intro-name{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-name img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+}
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero .name {
+    color: #4A6CF7; /* warna biru elegan */
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* About Me */
+.about {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.about-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
